@@ -43,6 +43,18 @@ Do:
 - [Our Website](https://labzero.com)
 ```
 
+For intra-page links to headings (e.g. `my-page#some-heading`).  Use the heading name in all lower case with dashes for spaces.
+
+Example:
+
+```md
+If this page is `meetings.md`, one can link to the section below like:
+[online meetings](meetings.md#conducting-an-online-meeting)
+
+
+### Conducting an Online Meeting
+```
+
 #### Images
 
 * Place images in assets/images

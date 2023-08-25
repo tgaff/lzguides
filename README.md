@@ -25,7 +25,7 @@ Markdown pages here use kramdown + some Jekyll & theme based enhancements.  Kram
 * Links to a specific part of a page (e.g. `#heading-1`) must be in lower case.  (GFM allows mixed case)
 * You can automatically generate a Table of Contents for a long page. (see below)
 
-The first h1 or `#` will automatically become the page title.  You can override this with some `headmatter` (see that section below).
+The first `h1` or `#` will automatically become the page title.  You can override this with some `headmatter` (see that section below).
 
 #### Links
 
@@ -71,6 +71,21 @@ You can have Jekyll automatically generate a table of contents for you.  Where y
 * list to be populated with toc
 {:toc}
 ```
+
+#### adding `headmatter`
+
+Headmatter is a special type of configuration placed at the top of the file.  Jekyll uses this to set or control certain document properties.
+
+**It is optional for nearly all pages**  However, here are a few pieces of headmatter you might choose to use:
+
+```
+---
+title: The differences between Crocodiles and Alligators
+layout: page
+---
+```
+
+The above sets the article title (the 1st `h1` if unset).  And it switches to the `page` layout.  The `page` layout does *not* display the "Pages" section with related pages at the bottom.
 
 ## Technology
 

@@ -31,7 +31,7 @@ The first `h1` or `#` will automatically become the page title.  You can overrid
 
 Use root relative links to other pages.  Don't use github based links.  In general internal links should start with `/`, not `http`.  External links should start with `https://`
 
-**Don't**
+*Don't:*
 ```md
 - [How to Write User Stories](https://github.com/labzero/guides/blob/master/process/how_we_write_user_stories.md)
 - [Our Website](labzero.com)
@@ -73,20 +73,20 @@ assets/images/lz-logo.svg
 
 #### file naming
 
-Any file named with the extension `.md` or `.html` is automatically picked up and you can link to it.
+Any file named with the extension `.md` or `.html` is automatically included in the site.  You can link directly to it.  Other file types may or may not require custom config.
 
 #### Table of Contents
 
 You can have Jekyll automatically generate a table of contents for you.  Where you want the TOC add the following markdown:
 
 ```md
-* list to be populated with toc
+* list to be automatically populated with TOC by Jekyll
 {:toc}
 ```
 
 #### adding `headmatter`
 
-Headmatter is a special type of configuration placed at the top of the file.  Jekyll uses this to set or control certain document properties.
+Headmatter is a special type of configuration placed at the top of a file.  Jekyll uses this to set or control certain document properties.
 
 **It is optional for nearly all pages**  However, here are a few pieces of headmatter you might choose to use:
 

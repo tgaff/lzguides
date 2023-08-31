@@ -1,11 +1,9 @@
 {% if site.google_analytics %}
-<script id='mom'>!function (w, d) {
-        console.log('hi mom')
-    }(window, document)
-</script>
-
 <script>!function (w, d) {
-        w.ga = w.ga || function () {(ga.q = ga.q || []).push(arguments)}; ga.l = +new Date;
+        w.ga = w.ga || function () {
+            (ga.q = ga.q || []).push(arguments)
+            console.log('gaq', ga.q, arguments)
+        }; ga.l = +new Date;
 
         /*{% if site.hydejack.cookies_banner %}*/
         if (navigator.CookiesOK) {
@@ -26,15 +24,15 @@
         ga('create', '{{ site.google_analytics }}', 'auto');
         /*{% endif %}*/
 
-        var pushStateEl = d.getElementById('_pushState');
-        var timeoutId;
-        pushStateEl.addEventListener('hy-push-state-load', function () {
-            w.clearTimeout(timeoutId);
-            timeoutId = w.setTimeout(function () {
-                ga('set', 'page', w.location.pathname);
-                ga('send', 'pageview');
-            }, 500);
-        });
+        // var pushStateEl = d.getElementById('_pushState');
+        // var timeoutId;
+        // pushStateEl.addEventListener('hy-push-state-load', function () {
+        //     w.clearTimeout(timeoutId);
+        //     timeoutId = w.setTimeout(function () {
+        //         ga('set', 'page', w.location.pathname);
+        //         ga('send', 'pageview');
+        //     }, 500);
+        // });
 
         d.addEventListener('hy--cookies-ok', function () {
             w.ga(function (tracker) {
@@ -43,16 +41,14 @@
             });
         });
 
-        // w.loadJSDeferred('https://www.google-analytics.com/analytics.js');
+        w.loadJSDeferred('https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}');
     }(window, document);</script>
 {% endif %}
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2NX5YFW46E"></script>
 
-
-<script>
+<!-- <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() {dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'G-2NX5YFW46E');
-</script>
+</script> -->

@@ -10,8 +10,10 @@
     gtag('js', new Date());
 
     /* start tracking, will respect consent if set */
+    console.log('load ga code: {{ site.google_analytics }}');
     gtag('config', '{{ site.google_analytics }}');
 
+    console.log('load js deferred');
     w.loadJSDeferred('https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}');
   }(window, document);</script>
 {% endif %}

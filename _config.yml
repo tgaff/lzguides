@@ -58,6 +58,11 @@ titles_from_headings:
 #   - process/speclet_playbook.md
 #   - process/testing_strategy.md
 
+site: 
+  data:
+    strings:
+      redirecting:      Please click the link if you are not redirected in 3 seconds.
+
 
 google_analytics: G-2NX5YFW46E
 

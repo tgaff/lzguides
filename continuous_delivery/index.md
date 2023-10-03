@@ -1,6 +1,5 @@
 ---
 layout: page
-title: Continuous Delivery
 has_children: true
 related_pages: none
 ---
@@ -11,13 +10,25 @@ This page automatically generates a listing of pages in its directory.
 
 {% assign current_dir = page.dir %}
 
-I'm {{ page.dir }}
+*This section contains the following articles:*
 
 {% assign pages = site.pages | where_exp: "item", "item.dir == current_dir" %}
+
 {% for page in pages %}
-  {% unless page.name == "redirect.html" %}
+- {{page  | inspect}}
+{% endfor %}
+
+{% for page in pages %}
+  {% unless page.name == "redirect.html" or page.title == nil %}
 - [{{ page.title or page.name or page.url }}]({{page.url | relative_url }})
   {% endunless %}
 {% endfor %}
 
-◄ [View all our guides](../)
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
+◄ [Click here to view all of our guides](../)

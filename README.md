@@ -114,6 +114,12 @@ In short you're looking at:
 
 [github-pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages) + [Jekyll](https://jekyllrb.com/) + [hydejack (theme)](https://hydejack.com/docs/) + kramdown (md parser).
 
+If you're writing liquid code, a good trick for debugging is to output the variable values using:
+
+```
+{{page | inspect}}
+```
+
 ### Deployment
 
 Deployment is automatic when a new commit is merged to the master branch.  It is performed by a Github action with no customization.

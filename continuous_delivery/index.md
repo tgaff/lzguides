@@ -15,10 +15,6 @@ This page automatically generates a listing of pages in its directory.
 {% assign pages = site.pages | where_exp: "item", "item.dir == current_dir" %}
 
 {% for page in pages %}
-- {{page  | inspect}}
-{% endfor %}
-
-{% for page in pages %}
   {% unless page.name == "redirect.html" or page.title == nil %}
 - [{{ page.title or page.name or page.url }}]({{page.url | relative_url }})
   {% endunless %}

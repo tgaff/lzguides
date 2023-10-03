@@ -1,2 +1,2 @@
-{% include auto-index.md %}
+{% include auto-index-page.md %}
 

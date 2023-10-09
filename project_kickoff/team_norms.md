@@ -1,5 +1,7 @@
 # Team Norms Playbook
 
+[bad internal link](/project_kickoff/bad-file.md)
+
 ## What are team norms? 
 
 Norms are the team’s values, working styles and expectations. It's especially relevant to align on norms when starting with a new team. People don’t know each other professionally or personally. The [team or project’s charter](project_charter.md) is a blank slate. 

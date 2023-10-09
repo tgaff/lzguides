@@ -1,7 +1,6 @@
 # Meeting Etiquette
 
-[click here](/project_kickoff/file-bad.md) to see a broken link
-[or here](https://fdsklj3klds.2sdkljdd.dkljd.com/index?3333083)
+[so bad](https://fdsklj3klds.2sdkljdd.dkljd.com/index?3333083)
 
 ## We Are Prepared
 _If we're not early, we're late._

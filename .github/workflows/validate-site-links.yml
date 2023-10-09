@@ -1,17 +1,16 @@
-name: Validate site links
-  # This validates links on the site after it's deployed
-  # If you're operating on a fork, this won't work correctly for you.
+# This validates links on the site after it's deployed
+# If you're operating on a fork, this won't work correctly for you.
+name: Check links with muffet
 on:
   deployment
 
 jobs:
-  linkChecker:
+  my-broken-link-checker:
+    name: Check broken links
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Link Checker
-        uses: lycheeverse/lychee-action@v1.8.0
+      - name: Check
+        uses: ruzickap/action-my-broken-link-checker@v2
         with:
-          fail: true
-          args: "--verbose --no-progress './**/*.rst' https://guides.labzero.com"
+          url: https://guides.labzero.com
+          cmd_params: "--max-connections=3 --color=always"  # Check just one page

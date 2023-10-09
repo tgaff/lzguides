@@ -1,6 +1,5 @@
 # Meeting Etiquette
 
-[so bad](https://fdsklj3klds.2sdkljdd.dkljd.com/index?3333083)
 
 ## We Are Prepared
 _If we're not early, we're late._

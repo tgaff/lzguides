@@ -1,5 +1,6 @@
 # Meeting Etiquette
 
+
 ## We Are Prepared
 _If we're not early, we're late._
 

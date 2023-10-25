@@ -17,3 +17,5 @@ We often strive toward 100% code coverage when reasonable. In some cases, there 
 ## Rendering: React Testing Library
 
 We make use of [React Testing Library](https://testing-library.com/react) to test our React components, writing integration tests that describe user behavior, and skipping directly testing any internal methods or hooks. When aiming for high (or total) code coverage, we find that the use of RTL helps us write better components, as we want our tests to _indirectly_ cover the aforementioned internal code.
+
+[another bad link with slash](/technical_guides/foo.md)
